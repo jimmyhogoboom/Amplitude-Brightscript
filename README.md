@@ -16,7 +16,7 @@ If you're in the market to add analytics to your Roku application this might be 
 4. And in your Session, or somewhere else that's persistant, create an instance of the Analytics object via the following:
 `Analytics = Analytics("UserIdentifier", "AmplitudeAPIKey", YourEventLoopPort)`
 
-###**Example**
+### **Example**
     MessagePort = GetGlobal().MessagePort
     User = createObject("roDeviceInfo").GetDeviceUniqueId()
     ApiKey = "ABCD1234"
@@ -37,10 +37,10 @@ If you're in the market to add analytics to your Roku application this might be 
 -----------
 Utilizing your reference to the **Analytics** object you initialized above you can make tracking calls using **ViewScreen**, and **AddEvent**.
 
-###**Screen Views**
+### **Screen Views**
 **ViewScreen** takes a simple string parameter like so: `Analytics.ViewScreen("VideoContentGridScreen")`
 
-###**Events**
+### **Events**
 **LogEvent** takes in a string with the event that took place and an optional [roAssociativeArray](http://sdkdocs.roku.com/display/sdkdoc/roAssociativeArray) of details for your event.
 
 
